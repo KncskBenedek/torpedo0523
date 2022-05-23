@@ -6,6 +6,11 @@ public class Hajo {
     
     
     public String talalat(int poz){
-        return "";
+        int i = 0;
+        while (i < this.poz.length && !(poz == this.poz[i])) {
+            i++;
+        }
+        
+        return i<this.poz.length ? "talált":"mellé";
     }
 }
