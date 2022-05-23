@@ -2,7 +2,19 @@
 package main;
 
 public class Hajo {
-    private int[] poz = new int[3];
+    private int[] poz;
+
+    public Hajo() {
+        this(new int[]{2,3,4});
+    }
+
+
+    public Hajo(int[] poz) {
+        this.poz = new int[3];
+        this.poz = poz;
+    }
+    
+    
     
     
     public String talalat(int poz){

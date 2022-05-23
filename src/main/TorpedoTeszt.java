@@ -5,13 +5,13 @@ public class TorpedoTeszt {
     public static void main(String[] args) {
         System.out.println("");
         //assert 1==0: "nem jó az ellenőrzés";
-        new TorpedoTeszt().tesztLoves(4);
+        new TorpedoTeszt().tesztLovesTalalt(4);
     }
     
-    public String tesztLoves(int poz){
-        Hajo hajo = new Hajo();
+    public String tesztLovesTalalt(int poz){
+        Hajo hajo = new Hajo(new int[]{2,3,4});
         String t = hajo.talalat(poz);
-        assert t.equals("talalt"): "nem jó a találat ellenőrzés";
+        assert t.equals("talált"): "nem jó a találat ellenőrzés";
         return "";
     } 
 }
