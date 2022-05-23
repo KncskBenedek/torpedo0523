@@ -25,7 +25,7 @@ public class TorpedoJatek {
             
             
             lovesSzam++;
-            String valasz = hajo.talalat(beTipp);
+            String valasz = hajo.talalat(beTipp-1);
             System.out.println(valasz);
             if(valasz.equals("talált")){
                 talalat++;
